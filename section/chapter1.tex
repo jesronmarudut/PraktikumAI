@@ -198,4 +198,187 @@ Testing set digunakan untuk mengukur sejauh mana classifier berhasil melakukan k
 \caption{Langkah terakhir.}
 \end{figure}
 \end{enumerate}
+
+
+
+=======
+\section{Teori/Puad Hamdani/1164084}
+\begin{enumerate}
+\item Definisi, Sejarah dan Perkembangan Kecerdasan Buatan
+\begin{itemize}
+\item Definisi
+\par
+Kecerdasan buatan adalah ilmu pengetahuan yang berhubungan dengan mesin untuk memecahkan persoalan rumit dengan cara yang mudah,dilakukan dengan mengikuti kecerdasan manusia dan menerapkanya di computer sebagai algoritma
+\par
+\item Sejarah dan Perkembangan
+\par
+AI (artificial Intelligence) di kenal sekitar tahun 1943 Teori tentang jaringan saraf tiruan (artificial neuron network, ANN) menyatakan bahwa setiap neuron dapat dimisalkan dalam keadaan biner, yaitu ON dan OFF. Dari setiap percobaan, setiap fungsi perhitungan dapat diselesaikan melalui jaringan neuron yang dimodelkan.
+Pada tahun 1965, Lotfi Zadeh, professor teknik elektro di University of California, memublikasikan konsepnya yang disebut dengan “fuzzy sets”. Beliau menjabarkan FL dengan pernyataan matematis dan visual yang mudah dipahami. Karena kajian ini berkaitan dengan sistem kontrol, konsep tersebut banyak dikembangkan dalam konteks pemrograman komputer hingga saat ini.
+\end{itemize}
+\item Definisi Supervised Learning, Unsupervised Learning, Klasifikasi, Regresi, Data Set, Training Set dan Testing Set
+\begin{itemize}
+\item Supervised Learning 
+\par
+Supervised learning adalah pembelajaran yang terawasi dimana jika output yang diharapkan telah diketahui sebelumnya. Biasanya pembelajaran ini dilakukan dengan menggunakan data yang telah ada
+\item Unsupervised Learning
+\par
+Unsupervised learning adalah pembelajaran yang tidak terawasi dimana tidak memerlukan target output. Metode ini tidak dapat ditentukan hasil seperti apa yang diharapkan selama proses pembelajaran, Nilai bobot yang disusun dalam proses range tertentu tergantung pada output yang diberikan.
+\item Klasifikasi
+\par
+Klasifikasi adalah Proses pengelompokkan berdasarkan ciri-ciri persamaan dan perbedaan
+\item Regresi
+\par
+Regresi adalah metode analisis statistik yang digunakan untuk melihat pengaruh antara dua atau lebih variabel
+\item Data Set
+\par
+Data set adalah objek yang merepresentasikan data dan relasinya di memory, Strukturnya hampir mirip dengan data di data base. Data set berisi koleksi dari data table dan data relation 
+\item Training Set
+\par
+Training set adalah bagian dataset yang kita latih untuk membuat prediksi atau algoritma ML lainnya sesuai tujuannya masing-masing. Kita memberikan petunjuk melalui algoritma agar mesin yang kita latih bisa mencari korelasinya sendiri. Walau demikian proses belajar harusnya proporsional. Layaknya seorang murid yang terlalu diforsir belajar, maka hasilnya pun tidak akan baik. Dalam istilah ML disebut dengan overfitting. Akan lebih mudah memahami konsep overfitting melalui praktek.
+\item Testing Set
+\end{itemize}
+\par
+Test set adalah bagian dataset yang kita tes untuk melihat keakuratannya, atau dengan kata lain melihat performanya.
+\item Instalasi Scikit-Learn dari Anaconda
+\begin{itemize}
+\item Pertama install Anaconda di pc masing-masing
+\item Kemudian buka cmd untuk menginstall scikit-learn
+\item Ketikan "conda install scikit-learn" dan pilih "y"
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.6]{figures/puad1.png}
+\caption{Proses Instalasi}
+\end{figure}
+\begin{itemize}
+\item ketik "pip install -U scikit-learn" untuk menggabungkan anaconda dan python
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/puad2.png}
+\caption{Gabung Conda dan Python}
+\end{figure}
+\begin{itemize}
+\item Setelah itu, kompilasi kode di dalam python dengan ketik "python", lalu "print('puad')" maka akan menghasilkan seperti gambar berikut.
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.6 ]{figures/puad3.png}
+\caption{Kompilasi Kode}
+\end{figure}
+\item Loading an Example Dataset
+\begin{itemize}
+\item Ketik perintah berikut "from sklearn import datasets" untuk mengimport dataset dari sklearn.
+\end{itemize}
+\begin{itemize}
+\item ketik perintah "iris = datasets.load iris" untuk membuat variable iris yang berisi datasets.
+\end{itemize}
+\begin{itemize}
+\item ketik perintah berikut"digits = datasets.load digits"untuk membuat variable digits yang berisi datasets, dan juga "print(digits.data) " untuk melihat isi data dari datasets seperti gambar 
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/puad4.png}
+\caption{Variable Digits}
+\end{figure}
+\begin{itemize}
+\item kemudian  ketik "digits target"
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/puad5.png}
+\caption{}
+\end{figure}
+\begin{itemize}
+\item kemudian  ketik "digits.images[0] "
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/puad6.png}
+\caption{}
+\end{figure}
+\begin{itemize}
+\item kemudian  ketik "from sklearn import svm" dan kemudian clf = svm.SVC(gamma=0.001, C=100.) "
+\item kemudian  ketik "clf.fit(digits.data[:-1], digits.target[:-1]) "
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/puad7.png}
+\caption{}
+\end{figure}
+\begin{itemize}
+\item kemudian  ketik "clf.predict(digits.data[-1:])"
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/puad8.png}
+\caption{}
+\end{figure}
+\begin{itemize}
+\item kemudian  ketik "from sklearn import svm"
+\item kemudian  ketik "from sklearn import datasets"
+\item kemudian  ketik "clf = svm.SVC(gamma='scale')"
+\item kemudian  ketik "iris = datasets.load(andeskore)iris()"
+\item kemudian  ketik "X, y = iris.data, iris.target"
+\item kemudian  ketik "clf.fit(X, y) "
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/puad9.png}
+\caption{}
+\end{figure}
+\begin{itemize}
+\item kemudian  ketik "import pickle"
+\item kemudian  ketik "s = pickle.dumps(clf)"
+\item kemudian  ketik "clf2 = pickle.loads(s)"
+\item kemudian  ketik "clf2.predict(X[0:1])"
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/puad10.png}
+\caption{}
+\end{figure}
+\begin{itemize}
+\item kemudian  ketik " y[0]"
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/puad11.png}
+\caption{}
+\end{figure}
+\begin{itemize}
+\item kemudian  ketik "from joblib import dump, load"
+\item kemudian  ketik "dump(clf, 'filename.joblib')"
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/puad13.png}
+\caption{}
+\end{figure}
+\begin{itemize}
+\item conventions
+\item ketikan "import numpy as np"
+\item ketikan "from sklearn import random(andeskor)projection"
+\item ketikan "rng = np.random.RandomState(0)"
+\item ketikan "X = rng.rand(10, 2000)"
+\item ketikan "X = np.array(X, dtype='float32')"
+\item ketikan "X.dtype"
+\item ketikan "transformer = random projection.GaussianRandomProjection"
+\item ketikan "X new = transformer.fit transform(X)"
+\item ketikan "X new.dtype"
+\end{itemize}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/puad14.png}
+\caption{}
+\end{figure}
+\item screenshoot eror
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/puad12.png}
+\caption{}
+\end{figure}
+\item kode eror "no module named 'joblib'"
+\item penanganannya instal joblib dengan mengetikan"conda instal -c anaconda joblib"
+\end{enumerate}
 >>>>>>> efee6eca5df5ee495d6544dd76ec774eee595c8a
