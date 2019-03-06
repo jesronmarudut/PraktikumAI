@@ -138,4 +138,141 @@ cite and paraphrase method 2 if you have more method please add new subsection.
 \end{figure}
 \end{enumerate}
 
+
+\subsection{Scikit-learn}
+\begin{enumerate}
+\item Penjelasan kodingan ini akan menampilkan data pada file yang ditentukan. Untuk codingan ini file yang dieksekusi untuk digunakan ialah student-mat.csv. Dalam codingan dapat dilihat bahwa variabel Rambutan dapat  didefinisikan untuk pembacaan file csv dari  Durian  dimana untuk pemisahnya yaitu separation berupa ; . Setelah itu variabel Rambutan di tampilkan dengan perintah menampilkan len panjang ataupun jumlah dan hasilnya berupa angka 395 . 
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/no1.png}
+\caption{Load Dataset}
+\label{Hasil}
+\end{figure}
+\end{enumerate}
+
+\begin{enumerate}
+\item Kodingan berikut berguna untuk menampilkan setiap baris  G1, G2 dan G3 untuk kolom PASS pada variabel Rambutan. Untuk lebih jelasnya, pada kodingan terdapat pendefinisian pembacaan lamda ( panjang gelombang ) dari baris G1, G2 dan G3. Apabila row-row tersebut bernilai lebih dari 35 maka akan terdefinisikan angka 1 apabila tidak, maka akan terdefinisikan angka 0 pada kolom PASS ( sesuai permintaan awal ). Selanjutnya variabelnya di ditampilkan sehingga menampilkan keluaran. Tidak lupa terdapat juga jumlah dari baris dan kolom yang terubah sesuai dengan baris yang dieksekusi.
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/no2.png}
+\caption{Generate Binary label}
+\label{Hasil}
+\end{figure}
+\end{enumerate}
+
+\begin{enumerate}
+\item Kodingan berikut mendefinisikan pemanggilan get dummies dari Durian dalam variabel Rambutan. Di dalam get dummies sendiri akan terdefinisikan variabel Rambutan dengan kolom-kolom yang akan dieksekusi seperti school, address dll. Kemudian variabel tersebut diartikan untuk mendapatkan kembalian berupa keluaran dari eksekusi perintah variabel Rambutan beserta dengan jumlah baris dan kolom data yang dieksekusi.
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/no3.png}
+\caption{Use one-hot encoding}
+\label{Hasil}
+\end{figure}
+\end{enumerate}
+
+\begin{enumerate}
+\item Kodingan ini dipakai untuk mengartikan pembagian data yang berupa training dan testing data. Pertama-tama variabel Rambutan akan mengartikan sampel yang akan digunakan. Selanjutnya masing-masing parameter yaitu Rambutan train dan Rambutan test akan berjumlah 500 data. Selanjutnya dilakukan pengeksekusian untuk kolom Pass, apabila sesuai dengan axis=1 maka eksekusi fungsi berhasil. Selain itu juga disertakan jumlah dari peserta yang lolos dari semua nilai data setnya.  
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/no4.png}
+\caption{Shuffle rows}
+\label{Hasil}
+\end{figure}
+\end{enumerate}
+
+\begin{enumerate}
+\item Kodingan ini dapat membuktikan pengujian dari Klasifikasi Decision Tree yang ada, apakah true atau tidak dan hasilnya true. Pada kodingan ini di definisikan library sklearn untuk mengimpot atau menampilkan tree. Variabel timun difungsikan untuk membaca klasifikasi decision tree dari tree itu sendiri dengan 2 parameternya yaitu kriteria=entropy dan max depth=5. Maka selanjutnya variabel timun akan masuk dan terbaca dalam module fit dengan 2 parameter yaitu Rambutan trai att dan Rambutan train pass.
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/no5.png}
+\caption{Fit a Decision tree}
+\label{Hasil}
+\end{figure}
+\end{enumerate}
+
+\begin{enumerate}
+\item Penjelasan kodingan ini memberikan gambaran dari klasifikasi decision tree yaitu pengolahan parameter yang dieksekusi kedalam variabel timun. Tentunya dengan pemanfaatan library graphviz yang telah diimport dan difungsikan.
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/no6.png}
+\caption{Visualize tree}
+\label{Hasil}
+\end{figure}
+\end{enumerate}
+
+\begin{enumerate}
+\item Penjelasan kodingan ini membahas tentang penyimpanan tree dari library graphviz yang dieksekusi bersamaan dengan variabel timun dan parameter lainnya. Dilakukan pengecekan dan pengujian apakah klasifikasi decision treenya dapat berjalan atau tidak. Apabila tidak berjalan, maka akan terjadi error, namun kodingan ini berfungsi.
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/no7.png}
+\caption{Save tree}
+\label{Hasil}
+\end{figure}
+\end{enumerate}
+
+\begin{enumerate}
+\item Penjelasan kodingan ini membaca skore dari variabel timun dimana terdapat 2 parameter yang dihitung dan diuji yaitu Rambutan test att dan Rambutan test pass. Untuk hasilnya sendiri mengapa berupa angka, dikarenakan pada parameter yang dieksekusi memang memiliki data sehingga dieksekusi dan menghasilkan keluaran dari score tersebut.
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/no8.png}
+\caption{Score}
+\label{Hasil}
+\end{figure}
+\end{enumerate}
+
+\begin{enumerate}
+\item Penjelasan kodingan ini membahas mengenai pengkesekusian fungsi dan variabel dari library yang didefinisikan dan yang diimport. Penjelasan lebih jelasnya ialah kodingan ini mendefinisikan library sklearn.model.selection kemudian mengimport cross val score. Kemudian variabel score mendefinisikan cross val score yang telah diimport tadi dengan 4 parameter yaitu timun, Rambutan att, Rambutan pass dan cv=5 untuk dieksekusi. Setelah semua pemrosesan tersebut maka hasil yang di tampilkan ialah rata-rata perhitungan dari variabel score dimana dan standar dari plus minusnya tentunya dengan ketentuan parameter Accuracy .
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/no9.png}
+\caption{Show Averange score}
+\label{Hasil}
+\end{figure}
+\end{enumerate}
+
+\begin{enumerate}
+\item Penjelasan kodingan ini mendefinisikan max depth dalam jarak angka antara parameter 1 dan 20. Variabel timun mendefinisikan klasifikasi decision tree dengan 2 parameter. Kemudian variabel score mengeksekusi parameter lainnya yaitu seperti timun, Rambutan att, Rambutan pass dan cv=5 ) . Hasil yang ditampilkan ialah dari max depth, accuracy dan plus minusnya dan akhirnya hasil outputannya keluar.
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/no10.png}
+\caption{Max depth}
+\label{Hasil}
+\end{figure}
+\end{enumerate}
+
+\begin{enumerate}
+\item Kodingan ini mengartikan bahwa variabel depth\_acc akan mengeksekusi empty dari importan library numphy yang dinamakan np dengan 2 parameter yaitu 19,3 dan float. i didefinisikan dengan angka 0 kemudian untuk perhitungan jarak max depth diantara parameter 1 dan 20. Variabel np mengartikan klasifikasi decision tree dengan 2 parameter. Setelah itu, variabel score mendefinisikan variabel depth\_acc dengan i dan 0, variabel kedua dari depth\_acc dengan i dan 1 serta variabel ketiga dari depth\_acc dengan i dan 2, maka pengeksekusian akhir bahwa variabel i akan ditambah dengan angka 1 untuk hasil akhirnya. Keluarannya akan berupa array dari perhitungan parameter dan variabel yang telah didefinisikan sebelumnya.
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/no11.png}
+\caption{Depth Acc}
+\label{Hasil}
+\end{figure}
+\end{enumerate}
+
+\begin{enumerate}
+\item Kodingan mendefinisikan pemanggilan dari library matplotlib.pyplot sebagai salak sehingga nanti hasilnya akan berbentuk gambar grafik/gelombang. Untuk variabel fig dan ax akan mendefinisikan subplots dari salak. Setelah itu ketentuan dari parameter depth acc = 0, depth acc = 1 dan depth acc 2. Selanjutnya untuk menampilkan gelombang maka panggil variabel salak dengan perintah show.
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/no12.png}
+\caption{Import}
+\label{Hasil}
+\end{figure}
+\end{enumerate}
+
+\subsection{Penanganan Eror}
+\begin{enumerate}
+\item Kodingan eror dan jenis erornya : sebenarnya tidak terdapat eror pada codingan ini namun saat pertama kali di run current cell codingan ini akan eror dan tidak keluar outputannya dikarenakan library graphviz sebelumnya tidak ditemukan atau belum di install terlebih dahulu.
+\subitem 
+\begin{verbatim}
+import graphviz
+dot_data = tree.export_graphviz(buahapel, out_file=None, label="all", impurity=False, proportion=True,
+                                feature_names=list(buahpir_train_att), class_names=["fail", "pass"], 
+                                filled=True, rounded=True)
+graph = graphviz.Source(dot_data)
+graph
+\end{verbatim}
+\item Solusi pemecahan masalah eror tersebut yaitu dengan cara menginstall terlebih dahulu library graphviznya pada anaconda prompt atau command prompt dengan perintah conda install graphviz setelah itu run kembali codingan No 8 maka akan muncul outputan atau tampilan keluarannya.
+\end{enumerate}
+
  
