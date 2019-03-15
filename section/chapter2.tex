@@ -2,6 +2,7 @@
 
 Your related works, and your purpose and contribution which must be different as below.
 
+<<<<<<< HEAD
 \section{Mhd Zulfikar Akram Nasution/ 1164081}
 \subsection{Teori}
 \begin{enumerate}
@@ -110,6 +111,74 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 \end{enumerate}
 
 \section{Mhd Zulfikar Akram Nasution/ 1164081}
+=======
+
+\section{puad hamdani/1164084}
+\subsection{binary classification }
+\begin{enumerate}
+\item Output aktual dari banyak algoritma binary classification adalah skor prediksi. Skor menunjukkan kepastian sistem bahwa pengamatan yang diberikan adalah milik kelas positif. Untuk membuat keputusan tentang apakah pengamatan harus diklasifikasikan sebagai positif atau negatif
+\end{enumerate}
+
+\subsection{supervised learning dan unsupervised learning}
+\begin{enumerate}
+\item Supervised learning adalah sebuah pendekatan dimana sudah terdapat data yang dilatih, dan terdapat variable yang di targetkan sehingga tujuan dari pendekatan ini adalah mengelompokkan suatu data ke data yang sudah ada.
+
+
+\item Unsupervised learning adalah istilah yang digunakan untuk pembelajaran bahasa Ibrani, yang terkait dengan pembelajaran tanpa guru, juga dikenal sebagai organisasi mandiri dan metode pemodelan kepadatan probabilitas input. Unsupervised learning tidak memiliki data latih, sehingga dari data yang ada, kita mengelompokan data tersebut menjadi dua bagian atau tiga bagian dan seterusnya.
+\end{enumerate}
+
+\subsection{evaluasi dan akurasi }
+\begin{enumerate}
+\item Evaluasi merupakan suatu proses identifikasi untuk mengukur atau menilai apakah suatu kegiatan/program yang dilaksanakan sesuai dengan perencanaan atau tujuan yang ingin dicapai.
+Akurasi merupakan tingkat kedekatan pengukuran kuantitas terhadap nilai yang sebenarnya. Kepresisian dari suatu sistem pengukuran
+\end{enumerate}
+
+\subsection{ bagaimana cara membuat dan membaca confusion matrix, buat confusion matrix }
+\begin{enumerate}
+\item Cara membuat dan membaca confusion matrix :
+\begin{itemize}
+\item 1)	Tentukan pokok permasalahan dan atributanya
+\item 2)	Buat pohon keputusan
+\item 3)	Lalu data testingnya
+\item 4)	Lalu mencari nilai a, b, c, dan d. Semisal a = 5, b = 1, c = 1, dan d = 3.
+\item 5)	Selanjutnya mencari nilai recall, precision, accuracy, serta dan error rate.
+\end{itemize}
+\item Berikut adalah contoh dari confusion matrix :
+\begin{itemize}
+\item Recall =3/(1+3) = 0,75
+\item Precision = 3/(1+3) = 0,75
+\item Accuracy =(5+3)/(5+1+1+3) = 0,8
+\item Error Rate =(1+1)/(5+1+1+3) = 0,2
+\end{itemize}
+\end{enumerate}
+
+\subsection{bagaimana K-fold cross validation bekerja dengan gambar ilustrasi}
+\begin{enumerate}
+\item Cara kerja K-fold cross validation :
+\begin{itemize}
+\item 1)	Total instance dibagi menjadi N bagian.
+\item 2)	Fold yang pertama adalah bagian pertama menjadi data uji (testing data) dan sisanya menjadi training data.
+\item 3)	Lalu hitung akurasi berdasarkan porsi data tersebut dengan menggunakan persamaan.
+\item 4)	Fold yang ke dua adalah bagian ke dua menjadi data uji (testing data) dan sisanya training data. 
+\item 5)	Kemudian hitung akurasi berdasarkan porsi data tersebut.
+\item 6)	Dan seterusnya hingga habis mencapai fold ke-K.
+\item 7)	Terakhir hitung rata-rata akurasi K buah.
+\end{itemize}
+\end{enumerate}
+
+\subsection{decision tree}
+\begin{enumerate}
+\item Decision tree merupakan model prediksi menggunakan struktur pohon atau struktur berhirarki.
+\end{enumerate}
+
+\subsection{Information Gain}
+\begin{enumerate}
+\item Information gain. Metode tersebut akan melakukan proses komputasi untuk mendapatkan atribut-atribut yang paling berpengaruh terhadap dataset
+\end{enumerate}
+
+
+\section{Puad Hamdani/ 1164084}
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 \subsection{Scikit-Learn}
 
 \begin{enumerate}
@@ -117,6 +186,7 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 \begin{verbatim}
 	# load dataset (student mat pakenya)
 	import pandas as pd
+<<<<<<< HEAD
 	lontong    = pd.read_csv('student-mat.csv', sep=';')
 	len(lontong)
 \end{verbatim}
@@ -127,11 +197,25 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 \end{figure}
 \par
 	Codingan pertama ini akan meload ( menampilkan ) data pada file yang ditentukan. Untuk codingan ini file yang dieksekusi ialah " student-mat.csv " . Secara jelasnya, dalam codingan dapat dilihat bahwa variabel lontong didefinisikan untuk pembacaan csv dari " lontong " dimana untuk pemisahnya yaitu separation berupa ; . Setelah itu variabel lontong di "print" dengan perintah menampilkan "len" panjang ataupun jumlah dan hasilnya berupa angka 649 . 
+=======
+\begin{verbatim}
+	sate    = pd.read_ csv('student-mat.csv', sep=';')
+	len(sate)
+\end{verbatim}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/41.png}
+\caption{Load Dataset}
+\end{figure}
+\par
+	Codingan ini akan meload ( menampilkan ) data pada file yang ditentukan. hasilnya berupa angka 649 . 
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 
 \item
 \begin{verbatim}
 	# generate binary label (pass/fail) based on G1+G2+G3 
 	# (test grades, each 0-20 pts); threshold for passing is sum>=30
+<<<<<<< HEAD
 	lontong['pass'] = lontong.apply(lambda row: 1 if (row['G1']+row['G2']+row['G3']) 
 											>= 35 else 0, axis=1)
 	lontong = lontong.drop(['G1', 'G2', 'G3'], axis=1)
@@ -150,12 +234,31 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 \begin{verbatim}
 	# use one-hot encoding on categorical columns
 	lontong = pd.get_dummies(lontong, columns=['sex', 'school', 'address', 
+=======
+	sate['pass'] = sate.apply(lambda row: 1 if (row['G1']+row['G2']+row['G3']) 
+											>= 35 else 0, axis=1)
+	sate = sate.drop(['G1', 'G2', 'G3'], axis=1)
+	sate.head()
+\end{verbatim}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.6]{figures/42.png}
+\caption{Generate Binary Label}
+\end{figure}
+\par
+	Codingan ini secara keseluruhan menampilkan  baris  G1, G2 dan G3 ( berdasarkan kriterianya ). Untuk lebih jelasnya, pada codingan terdapat pendefinisian pembacaan "lambda" ( panjang gelombang ) dari baris G1, G2 dan G3. Apabila row-row tersebut bernilai lebih dari 35 maka akan terdefinisikan angka "1" apabila tidak, maka akan terdefinisikan angka "0"
+\item
+\begin{verbatim}
+	# use one-hot encoding on categorical columns
+	sate = pd.get_dummies(sate, columns=['sex', 'school', 'address', 
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 									'famsize', 
 									'Pstatus', 'Mjob', 'Fjob', 
 	                               'reason', 'guardian', 'schoolsup', 
 								   'famsup', 'paid', 'activities',
 	                               'nursery', 'higher', 'internet', 
 									'romantic'])
+<<<<<<< HEAD
 	lontong.head()
 \end{verbatim}
 \begin{figure}[ht]
@@ -165,10 +268,23 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 \end{figure}
 \par
 	Secara keseluruhan, codingan ini mendefinisikan pemanggilan get dummies ke dalam variabel lontong. Di dalam get dummies sendiri akan terdefinisikan variabel lontong dengan kolom-kolom yang akan dieksekusi seperti school, address dll. Kemudian variabel tersebut di definisikan untuk mendapatkan kembalian berupa keluaran dari eksekusi perintah variabel lontong beserta dengan jumlah baris dan kolom data yang dieksekusi.
+=======
+\begin{verbatim}
+	sate.head()
+\end{verbatim}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.6]{figures/421.png}
+\caption{Pemanggilan get dummies}
+\end{figure}
+\par
+	Secara keseluruhan, codingan ini mendefinisikan pemanggilan get dummies ke dalam variabel sate.
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 
 \item
 \begin{verbatim}
 	# shuffle rows
+<<<<<<< HEAD
 	lontong = lontong.sample(frac=1)
 	# split training and testing data
 	lontong_train = d[:500]
@@ -182,10 +298,26 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 
 	lontong_att = lontong.drop(['pass'], axis=1)
 	lontong_pass = lontong['pass']
+=======
+	sate = sate.sample(frac=1)
+	# split training and testing data
+	sate_train = d[:500]
+	sate_test = d[500:]
+
+	sate_train_att = sate_train.drop(['pass'], axis=1)
+	sate_train_pass = sate_train['pass']
+
+	sate_test_att = sate_test.drop(['pass'], axis=1)
+	sate_test_pass = sate_test['pass']
+
+	sate_att = sate.drop(['pass'], axis=1)
+	sate_pass = sate['pass']
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 
 	# number of passing students in whole dataset:
 	import numpy as np
 	print("Passing: %d out of %d (%.2f%%)" % (np.sum(lontong_pass), len(lontong_pass), 
+<<<<<<< HEAD
 	       100*float(np.sum(lontong_pass)) / len(lontong_pass)))
 \end{verbatim}
 \begin{figure}[ht]
@@ -195,11 +327,24 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 \end{figure}
 \par
 	Secara keseluruhan codingan ini difungsikan untuk mendefinisikan pembagian data yang berupa training dan testing data. Secara jelasnya pertama-tama variabel lontong akan mendefinisikan sampel yang akan digunakan ( berupa shuffle row ) . Nah kemudian masing2 parameter yaitu lontong train dan lontong test akan berjumlah 500 data ( telah dibagi untuk training dan testing ). Selanjutnya dilakukan pengeksekusian untuk kolom Pass, apabila sesuai dengan "axis=1" maka eksekusi fungsi berhasil. Selain itu juga disertakan jumlah dari peserta yang lolos dari semua nilai data setnya.
+=======
+\begin{verbatim}
+	       100*float(np.sum(sate_pass)) / len(sate_pass)))
+\end{verbatim}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.6]{figures/43.png}
+\caption{Mendefinisikan pembagian data}
+\end{figure}
+\par
+	Secara keseluruhan codingan ini difungsikan untuk mendefinisikan pembagian data yang berupa training dan testing data
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 
 \item 
 \begin{verbatim}
 	# fit a decision tree
 	from sklearn import tree
+<<<<<<< HEAD
 	soto = tree.DecisionTreeClassifier(criterion="entropy", max_depth=5)
 	soto = soto.fit(lontong_train_att, lontong_train_pass)
 \end{verbatim}
@@ -210,14 +355,33 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 \end{figure}
 \par
 	Secara keseluruhan, codingan ini hanya membuktikan pengujian dari Klasifikasi Decision Tree yang ada, apakah true atau tidak dan hasilnya true. Apabila dibahas secara lengkap maka pada codingan ini di definisikan library sklearn untuk mengimpor atau menampilkan tree. Variabel soto difungsikan untuk membaca klasifikasi decision tree dari tree itu sendiri dengan 2 parameternya yaitu kriteria="entropy" dan max depth=5. Maka selanjutnya variabel soto akan masuk dan terbaca dalam module fit dengan 2 parameter yaitu lontong trai att dan lontong train pass.
+=======
+\begin{verbatim}
+	rendang = tree.DecisionTreeClassifier(criterion="entropy", max_depth=5)
+	rendang = rendang.fit(sate_train_att, sate_train_pass)
+\end{verbatim}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.9]{figures/44.png}
+\caption{Membuktikan pengujian}
+\end{figure}
+\par
+	Secara keseluruhan, codingan ini hanya membuktikan pengujian dari Klasifikasi Decision Tree yang ada, apakah true atau tidak dan hasilnya true
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 
 \item
 \begin{verbatim}
 	# visualize tree
 	import graphviz
+<<<<<<< HEAD
 	dot_data = tree.export_graphviz(soto, out_file=None, label="all", 
 									impurity=False, proportion=True,
 	                                feature_names=list(lontong_train_att), 
+=======
+	dot_data = tree.export_graphviz(rendang, out_file=None, label="all", 
+									impurity=False, proportion=True,
+	                                feature_names=list(sate_train_att), 
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 									class_names=["fail", "pass"], 
 	                                filled=True, rounded=True)
 	graph = graphviz.Source(dot_data)
@@ -225,7 +389,11 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 \end{verbatim}
 \begin{figure}[ht]
 \centering
+<<<<<<< HEAD
 \includegraphics[scale=0.3]{figures/lontong/6.png}
+=======
+\includegraphics[scale=0.3]{figures/45.png}
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 \caption{Gambaran decision tree}
 \end{figure}
 \par
@@ -234,15 +402,23 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 \item
 \begin{verbatim}
 	# save tree
+<<<<<<< HEAD
 	tree.export_graphviz(soto, out_file="student-performance.dot", 
 						 label="all", impurity=False, 
 						 proportion=True,
 	                     feature_names=list(lontong_train_att), 
+=======
+	tree.export_graphviz(rendang, out_file="student-performance.dot", 
+						 label="all", impurity=False, 
+						 proportion=True,
+	                     feature_names=list(sate_train_att), 
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 	                     class_names=["fail", "pass"], 
 	                     filled=True, rounded=True)
 \end{verbatim}
 \begin{figure}[ht]
 \centering
+<<<<<<< HEAD
 \includegraphics[scale=0.6]{figures/lontong/7.png}
 \caption{Library Graphviz}
 \end{figure}
@@ -260,10 +436,31 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 \end{figure}
 \par
 	Menampilkan hasil perhitungan dari kedua parameter yang terdapat pada code tersebut. Yang merupakan perhitungan hasil prediksi silang akan kemungkinan nilai di masa mendatang.
+=======
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.6]{figures/46.png}
+\caption{Library Graphviz}
+\end{figure}
+\par
+	Pada gambar 4.6 akan menampilkan yang terdapat pada Library Graphviz,
+\item
+\begin{verbatim}
+	rendang.score(sate_test_att, sate_test_pass)
+\end{verbatim}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.9]{figures/47.png}
+\caption{Menampilkan hasil perhitungan 2 parameter}
+\end{figure}
+\par
+	merupakan perhitungan hasil prediksi silang akan kemungkinan nilai di masa mendatang.
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 
 \item
 \begin{verbatim}
 	from sklearn.model_selection import cross_val_score
+<<<<<<< HEAD
 	kari = cross_val_score(soto, lontong_att, lontong_pass, cv=5)
 	# show average score and +/- two standard deviations away 
 	#(covering 95% of scores)
@@ -285,15 +482,47 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 	    kari = cross_val_score(soto, lontong_att, lontong_pass, cv=5)
 	    print("Max depth: %d, Accuracy: %0.2f (+/- %0.2f)" % 
 				(max_depth, kari.mean(), kari.std() * 2)
+=======
+	semur = cross_val_score(rendang, sate_att, sate_pass, cv=5)
+	# show average score and +/- two standard deviations away 
+	#(covering 95% of scores)
+	print("Accuracy: %0.2f (+/- %0.2f)" % (semur.mean(), semur.std() * 2))
+\end{verbatim}
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.6]{figures/48.png}
+\caption{Mendefinisikan library sklearn}
+\end{figure}
+\par
+	Kodingan tersebut mendefinisikan library sklearn model selection dan import cross val score
+\item 
+\begin{verbatim}
+	for max_depth in range(1, 20):
+	    rendang = tree.DecisionTreeClassifier(criterion="entropy", 
+			max_depth=max_depth)
+	    semur = cross_val_score(rendang, sate_att, sate_pass, cv=5)
+	    print("Max depth: %d, Accuracy: %0.2f (+/- %0.2f)" % 
+				(max_depth, semur.mean(), semur.std() * 2)
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 			 )
 \end{verbatim}
 \begin{figure}[ht]
 \centering
+<<<<<<< HEAD
 \includegraphics[scale=0.6]{figures/lontong/10.png}
 \caption{Menampilkan hasil fungsi max depth dan accuracy}
 \end{figure}
 \par
 	Pada gambar di atas kodingan nya berfungsi untuk menampilkan hasil dari fungsi Max Depth dan Accuraccy dari dari Decission Tree. Yaitu menmpilkan data dari angka 1-20.
+=======
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.6]{figures/49.png}
+\caption{Menampilkan hasil fungsi max depth dan accuracy}
+\end{figure}
+\par
+	menmpilkan data dari angka 1-20.
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 
 \item
 \begin{verbatim}
@@ -302,21 +531,38 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 	for max_depth in range(1, 20):
 	    soto = tree.DecisionTreeClassifier(criterion="entropy", 
 			max_depth=max_depth)
+<<<<<<< HEAD
 	    kari = cross_val_score(soto, lontong_att, lontong_pass, cv=5)
 	    depth_acc[i,0] = max_depth
 	    depth_acc[i,1] = kari.mean()
 	    depth_acc[i,2] = kari.std() * 2
+=======
+	    semur = cross_val_score(rendang, sate_att, sate_pass, cv=5)
+	    depth_acc[i,0] = max_depth
+	    depth_acc[i,1] = semur.mean()
+	    depth_acc[i,2] = semur.std() * 2
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 	    i += 1
 
 	depth_acc
 \end{verbatim}
 \begin{figure}[ht]
 \centering
+<<<<<<< HEAD
 \includegraphics[scale=0.6]{figures/lontong/11.png}
 \caption{Menjelaskan variable kari}
 \end{figure}
 \par
 	Dijelaskan bahwa variable kari akan menampilkan atau mendefinisikan nilai dari variabel score yang mana isi dari variable score yaitu soto, lontong att, lontong pass, cv=5. Yang mana hasil tampilan dari kodingannya adalah outputan seperti gambar 11.
+=======
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.6]{figures/410.png}
+\caption{Menjelaskan variable kari}
+\end{figure}
+\par
+	Bahwa variable semur akan menampilkan atau mendefinisikan nilai dari variabel score yang mana isi dari variable score yaitu rendang
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 
 \item 
 \begin{verbatim}
@@ -327,16 +573,27 @@ Decision Tree adalah sebuah metode pembelajaran yang digunakan untuk melakukan k
 \end{verbatim}
 \begin{figure}[ht]
 \centering
+<<<<<<< HEAD
 \includegraphics[scale=0.5]{figures/lontong/12.png}
 \caption{Menjelaskan dan menampilkan gambar grafik}
 \end{figure}
 \par
 	Pada gambar di atas dijelaskan bahwa pada library matplotlib akan menampilkan gambar grafik pada gambar 12 dari eksekusi fungsi ax.errorbar.
+=======
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/411.png}
+\caption{Menjelaskan dan menampilkan gambar grafik}
+\end{figure}
+\par
+	menampilkan gambar grafik pada gambar 4.11 dari eksekusi fungsi ax.errorbar.
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 
 \end{enumerate}
 
 
 \section{Penanganan Error}
+<<<<<<< HEAD
 Dari percobaan yang dilakukan di atas, error yang kita dapatkan di dokumentasikan dan di selesaikan(nilai 5 hari kedua):
 
 \begin{enumerate}
@@ -364,6 +621,10 @@ Solusi pemecahan masalah error tersebut
 \end{figure}
 
 \end{enumerate}
+=======
+Dari percobaan yang dilakukan di atas, tidak ada eror:
+
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
 
 \section{Same Topics}
 Cite every latest journal with same topic
@@ -383,6 +644,7 @@ cite and paraphrase method 1
 \subsection{Method 2}
 cite and paraphrase method 2 if you have more method please add new subsection.
 
+<<<<<<< HEAD
 \section{Teori/Jesron Marudut Hatuan/1164077}
 \subsection{Binary classification dilengkapi ilustrasi gambar}
 \begin{enumerate}
@@ -639,3 +901,7 @@ graph
 \end{enumerate}
 
  
+=======
+ 
+
+>>>>>>> abaa009ed6a2bf07ff821b0fed9603a84340748c
