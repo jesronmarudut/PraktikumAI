@@ -1,5 +1,144 @@
 \chapter{Methods}
 
+\section{JESRON MARUDUT HATUAN/1164077}
+\subsection{Teori}
+Penyelesaian Tugas Harian 5
+\begin{enumerate}
+\item Random Forest dan Ilustrasi Gambar
+\begin{itemize}
+\item Pengertian Random Forest:
+
+Random forests merupakan sebuah metode dalam pembelajaran untuk klasifikasi, regresi dan tugas-tugas lain yang telah berperasi dengan membangun banyak pohon keputusan pada saat latihan hingga menciptakan kelas yang merupakan mode kelas atau klasifikasi atau beberapa prediksi dari setiap tree atau pohon.
+
+\item Ilustrasi Gambar Random Forest :
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/c3jesron1.png}
+\caption{Gambar Random Forest}
+\label{contoh}
+\end{figure}
+\end{itemize}
+\item Langkah-langkah Membaca Dataset
+
+Berikut adalah langkah-langkah membaca dataset :
+\begin{itemize}
+\item Pertama-tamma buka applikasi Anaconda Navigator lalu jalankan Syder, kemudian import libraries yang mau dibuat
+\item Selanjutnya masukkan kode python untuk membaca file csv, lalu run applikasinya
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.8]{figures/c3jesron2.jpeg}
+\caption{Gambar Code Python}
+\label{contoh}
+\end{figure}
+
+\item Maka pada jendela konsol akan menampilkan pesan berikut:
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.8]{figures/c3jesron3.jpeg}
+\caption{Gambar Output}
+\label{contoh}
+\end{figure}
+
+\item Dan dari jendela explorer akan tampil dataset yang sudah diimport.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/c3jesron4.jpeg}
+\caption{Gambar Import Dataset}
+\label{contoh}
+\end{figure}
+
+\item Selanjutnya klik dataset cell, maka akan muncul seperti berikut :
+\item Seperti yang terlihat pada gambar tersebut dataset ini memiliki Kolom Country, Age, dan Salary sebagai kolom
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/c3jesron5.jpeg}
+\caption{Gambar Hasil Dataset Sel}
+\label{contoh}
+\end{figure}
+
+\item Purchased sebagai dependent variable-nya.
+\item Selanjutnya buat 2 matrix of features yang berisi values dari independent variable dan dependent variable.
+\item Selanjutnya, masukan perintah berikut :
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.8]{figures/c3jesron6.jpeg}
+\caption{Gambar Masukkan Perintah}
+\label{contoh}
+\end{figure}
+
+\item Perintah yang telah dilakukan gunanya untuk menampilkan dataset.
+\item Lalu klick dataset tersebut maka muncul tabel berisi dataset.
+\end{itemize}
+
+\item Cross Validation
+
+Cross Validation adalah sebuah teknik untuk memvalidasi model agar dapat menilai bagaimana hasil dari sebuah statistik analisis yang akan menggeneralisasi kumpulan beberapa data independen. Teknik ini lebih sering digunakan untuk melakukan prediksi model dan memperkirakan seberapa akurat sebuah model prediktif ketika sedang dijalankan dalam sebuah praktiknya. Dalam sebuah masalah prediksi, sebuah model biasanya diberikan kumpulan data (dataset) yang telah diketahui untuk digunakan dalam menjalankan pelatihan (dataset pelatihan), serta kumpulan data yang tidak diketahui (atau data yang pertama kali dilihat) terhadap model yang diuji (pengujian dataset)
+
+\item Maksud dari score 44\% pada random forest, 27\% pada decission tree dan 29\%dari SVM.
+
+Maksud dari score 27\% pada decission tree adalah hasil dari  presentasi dari perhitungan dataset, sedangkan maksud dari score 29\% pada SVM adalah dengan pendekatan jaringan saraf. Hasilnya didapat dari valdasi silang untuk memastikan bahwa membagi training test dengan cara yang berbeda. Sehingga outputnya 44\% untuk hutan acak, 27\% untuk pohon keputusan, dan 29\% untuk SVM.
+
+\item Confusion Matrix Dan Ilustrasinya
+\begin{enumerate}
+\item Perhitungan confusion matrix adalah sebagai berikut, akan saya beri contoh sederhana yaitu pengambilan keputusan untuk mendapatkan bantuan beasiswa. Saya menggunakan dua atribut, yaitu rekening listrik dan gaji. Ini adalah pohon keputusannya:
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/c3jesron7.png}
+\caption{Pohon Keputusan}
+\label{contoh}
+\end{figure}
+\end{enumerate}
+
+Selanjutnya data testingnya adalah
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{figures/c3jesron8.jpg}
+\caption{Gambar Data Testing}
+\label{contoh}
+\end{figure}
+
+Pertama-pertama, kita lakukan adalah mencari 4 nilai yaitu a,b,c, dan d:
+
+a= 5
+
+b= 1
+
+c= 1
+
+d= 3
+
+Hingga kita dapat mencari nilai Recall, Precision, accuracy dan Error Rate
+
+Recall =3/(1+3) = 0,75
+
+Precision = 3/(1+3) = 0,75
+
+Accuracy =(5+3)/(5+1+1+3) = 0,8
+
+Error Rate =(1+1)/(5+1+1+3) = 0,2
+
+\item Voting Random Forest Dan Ilustrasi Gambarnya.
+
+\begin{itemize}
+\item Pengertian Voting pada Random Forest
+Voting yaitu suara untuk setiap target yang diprediksi pada saat melakukan Random Forest. Pertimbangkan target prediksi dengan voting tertinggi sebagai prediksi akhir dari algoritma random forest.
+
+\item Gambar Voting Random Forest :
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.8]{figures/c3jesron9.jpg}
+\caption{Gambar Voting Random Forest}
+\label{contoh}
+\end{figure}
+\end{itemize}
+\end{enumerate}
+
 \section{The data}
 PLease tell where is the data come from, a little brief of company can be put here.
 
