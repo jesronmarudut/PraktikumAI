@@ -198,7 +198,8 @@ Akurasi merupakan tingkat kedekatan pengukuran kuantitas terhadap nilai yang seb
 \par
 	Codingan pertama ini akan meload ( menampilkan ) data pada file yang ditentukan. Untuk codingan ini file yang dieksekusi ialah " student-mat.csv " . Secara jelasnya, dalam codingan dapat dilihat bahwa variabel lontong didefinisikan untuk pembacaan csv dari " lontong " dimana untuk pemisahnya yaitu separation berupa ; . Setelah itu variabel lontong di "print" dengan perintah menampilkan "len" panjang ataupun jumlah dan hasilnya berupa angka 649 . 
 =======
-	sate    = pd.read_csv('student-mat.csv', sep=';')
+\begin{verbatim}
+	sate    = pd.read_ csv('student-mat.csv', sep=';')
 	len(sate)
 \end{verbatim}
 \begin{figure}[ht]
@@ -268,6 +269,7 @@ Akurasi merupakan tingkat kedekatan pengukuran kuantitas terhadap nilai yang seb
 \par
 	Secara keseluruhan, codingan ini mendefinisikan pemanggilan get dummies ke dalam variabel lontong. Di dalam get dummies sendiri akan terdefinisikan variabel lontong dengan kolom-kolom yang akan dieksekusi seperti school, address dll. Kemudian variabel tersebut di definisikan untuk mendapatkan kembalian berupa keluaran dari eksekusi perintah variabel lontong beserta dengan jumlah baris dan kolom data yang dieksekusi.
 =======
+\begin{verbatim}
 	sate.head()
 \end{verbatim}
 \begin{figure}[ht]
@@ -326,6 +328,7 @@ Akurasi merupakan tingkat kedekatan pengukuran kuantitas terhadap nilai yang seb
 \par
 	Secara keseluruhan codingan ini difungsikan untuk mendefinisikan pembagian data yang berupa training dan testing data. Secara jelasnya pertama-tama variabel lontong akan mendefinisikan sampel yang akan digunakan ( berupa shuffle row ) . Nah kemudian masing2 parameter yaitu lontong train dan lontong test akan berjumlah 500 data ( telah dibagi untuk training dan testing ). Selanjutnya dilakukan pengeksekusian untuk kolom Pass, apabila sesuai dengan "axis=1" maka eksekusi fungsi berhasil. Selain itu juga disertakan jumlah dari peserta yang lolos dari semua nilai data setnya.
 =======
+\begin{verbatim}
 	       100*float(np.sum(sate_pass)) / len(sate_pass)))
 \end{verbatim}
 \begin{figure}[ht]
@@ -353,6 +356,7 @@ Akurasi merupakan tingkat kedekatan pengukuran kuantitas terhadap nilai yang seb
 \par
 	Secara keseluruhan, codingan ini hanya membuktikan pengujian dari Klasifikasi Decision Tree yang ada, apakah true atau tidak dan hasilnya true. Apabila dibahas secara lengkap maka pada codingan ini di definisikan library sklearn untuk mengimpor atau menampilkan tree. Variabel soto difungsikan untuk membaca klasifikasi decision tree dari tree itu sendiri dengan 2 parameternya yaitu kriteria="entropy" dan max depth=5. Maka selanjutnya variabel soto akan masuk dan terbaca dalam module fit dengan 2 parameter yaitu lontong trai att dan lontong train pass.
 =======
+\begin{verbatim}
 	rendang = tree.DecisionTreeClassifier(criterion="entropy", max_depth=5)
 	rendang = rendang.fit(sate_train_att, sate_train_pass)
 \end{verbatim}
@@ -433,6 +437,8 @@ Akurasi merupakan tingkat kedekatan pengukuran kuantitas terhadap nilai yang seb
 \par
 	Menampilkan hasil perhitungan dari kedua parameter yang terdapat pada code tersebut. Yang merupakan perhitungan hasil prediksi silang akan kemungkinan nilai di masa mendatang.
 =======
+\begin{figure}[ht]
+\centering
 \includegraphics[scale=0.6]{figures/46.png}
 \caption{Library Graphviz}
 \end{figure}
@@ -509,6 +515,8 @@ Akurasi merupakan tingkat kedekatan pengukuran kuantitas terhadap nilai yang seb
 \par
 	Pada gambar di atas kodingan nya berfungsi untuk menampilkan hasil dari fungsi Max Depth dan Accuraccy dari dari Decission Tree. Yaitu menmpilkan data dari angka 1-20.
 =======
+\begin{figure}[ht]
+\centering
 \includegraphics[scale=0.6]{figures/49.png}
 \caption{Menampilkan hasil fungsi max depth dan accuracy}
 \end{figure}
@@ -547,6 +555,8 @@ Akurasi merupakan tingkat kedekatan pengukuran kuantitas terhadap nilai yang seb
 \par
 	Dijelaskan bahwa variable kari akan menampilkan atau mendefinisikan nilai dari variabel score yang mana isi dari variable score yaitu soto, lontong att, lontong pass, cv=5. Yang mana hasil tampilan dari kodingannya adalah outputan seperti gambar 11.
 =======
+\begin{figure}[ht]
+\centering
 \includegraphics[scale=0.6]{figures/410.png}
 \caption{Menjelaskan variable kari}
 \end{figure}
@@ -570,6 +580,8 @@ Akurasi merupakan tingkat kedekatan pengukuran kuantitas terhadap nilai yang seb
 \par
 	Pada gambar di atas dijelaskan bahwa pada library matplotlib akan menampilkan gambar grafik pada gambar 12 dari eksekusi fungsi ax.errorbar.
 =======
+\begin{figure}[ht]
+\centering
 \includegraphics[scale=0.5]{figures/411.png}
 \caption{Menjelaskan dan menampilkan gambar grafik}
 \end{figure}
