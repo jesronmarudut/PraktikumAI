@@ -237,8 +237,237 @@ Voting adalah hasil akhir dari keputusan yang ada pasa setiap pohon di random fo
 \includegraphics[scale=0.9]{figures/RF/1_2.png}
 \caption{Voting}
 \end{figure}
-
 \end{enumerate}
+\subsection{Praktek}
+\begin{enumerate}
+\item Aplikasi sederhana menggunakan Pandas seperti pada gambar 3.14
+	\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.7]{figures/PRF/1_1.png}
+	\caption{Aplikasi pandas}
+	\end{figure}
+	\par Penjelasan kodingan :
+		\begin{itemize}
+		\item Memanggil library.
+		\item Membuat variable dengan data frame.
+		\item Menampilkan hasil
+		\end{itemize}
+	\par Sehingga menghasilkan gambar 3.15 :
+	\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.7]{figures/PRF/1_2.png}
+	\caption{Hasil Pandas}
+	\end{figure}
+\item Aplikasi sederhana menggunakan Numpy pada gambar 3.16
+	\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.9]{figures/PRF/2_1.png}
+	\caption{Aplikasi Numpy}
+	\end{figure}
+	\par Penjelasan kodingan :
+		\begin{itemize}
+		\item Memanggil library
+		\item Membuat variable dengan value random dan size 3
+		\item Menampilkan hasil value
+		\end{itemize}
+	\par Sehingga menghasilkan gambar 3.17:
+	\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.9]{figures/PRF/2_1.png}
+	\caption{Hasil Numpy}
+	\end{figure}
+\item Aplikasi sederhana menggunakan Matplotlib pada gambar 3.18
+	\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.7]{figures/PRF/3_1.png}
+	\caption{Aplikasi Matplotlib}
+	\end{figure}
+	\par Penjelasan kodingan :
+		\begin{itemize}
+		\item Memanggil library
+		\item Membuat variable yang berisi bahasa pemrograman
+		\item Membuat variable yang berisi popularitas
+		\item Membuat variable untuk explode
+		\item Membuat diagram pie atau yang berbentuk lingkaran
+		\item Membuat garis koordinat
+		\item Menampilkan hasil
+		\end{itemize}
+	\par Sehingga menghasilkan gambar 3.19:
+	\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.7]{figures/PRF/3_2.png}
+	\caption{Hasil Matplotlib}
+	\label{contoh}
+	\end{figure}
+\item Program klasifikasi random forest
+	\begin{itemize}
+		\item Pertama baca dataset terlebih dahulu seperti pada gambar 3.20
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/4_1.png}
+			\caption{Membaca Data File}
+			\end{figure}
+		\item Kemudian lihat sebagian data awal dengan listing seperti pada gambar 3.21
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.9]{figures/PRF/4_2.png}
+			\caption{Melihat sebagian data}
+			\end{figure}
+		\item Kemudian lihat jumlah datal dengan listing seperti pada gambar 3.22
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.9]{figures/PRF/4_3.png}
+			\caption{Melihat jumlah data}
+			\end{figure}
+		\item Ubah atribut menjadi kolom seperti pada gambar 3.23
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/4_4.png}
+			\caption{Ubah atribut jadi kolom}
+			\end{figure}
+		\item Membaca dataset label seperti pada gambar 3.24
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/4_5.png}
+			\caption{Membaca dataset label}
+			\end{figure}
+		\item Menggabungkan field dari dua file terpisah seperti pada gambar 3.25
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.9]{figures/PRF/4_6.png}
+			\caption{Menggabungkan field}
+			\end{figure}
+		\item Memidahkan dan memilih label seperti pada gambar 3.26
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.9]{figures/PRF/4_7.png}
+			\caption{Memisahkan dan memilih label}
+			\end{figure}
+		\item Melihat isi masing-masing data frame seperti pada gambar 3.27
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.9]{figures/PRF/4_8.png}
+			\caption{Melihat isi data}
+			\end{figure}
+		\item Pembagian data training dan data tes seperti pada gambar 3.28
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.9]{figures/PRF/4_9.png}
+			\caption{Pembagian data}
+			\end{figure}
+		\item Memanggil kelas random forest seperti pada gambar 3.29
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/4_10.png}
+			\caption{Kelas random forest}
+			\end{figure}
+		\item Lakukan fit untuk emmbangun random forest seperti pada gambar 3.30
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/4_11.png}
+			\caption{Membuat fitting}
+			\end{figure}
+		\item Kemudian lihat hasil dengan predict seperti pada gambar 3.31
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.9]{figures/PRF/4_12.png}
+			\caption{Melihat hasil}
+			\end{figure}
+		\item Lalu akan terlihat hasil score dari klasifikasi seperti pada gambar 3.32
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.9]{figures/PRF/4_13.png}
+			\caption{Hasil score}
+			\end{figure}
+	\end{itemize}
+\item Program Klasifikasi Confusion Matrix
+	\begin{itemize}
+		\item Setelah melakukan random forest kemudian dipetakan ke dalam confusion matrix seperti pada gambar 3.33
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/5_1.png}
+			\caption{Memetakan ke confusion matrix}
+			\end{figure}
+		\item Kemudian lihat hasilnya seperti pada gambar 3.34
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/5_2.png}
+			\caption{Melihat hasil}
+			\end{figure}
+		\item Lalu lakukan perintah plot seperti pada gambar 3.35
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/5_3.png}
+			\caption{Melakukan Plot}
+			\end{figure}
+		\item Selanjutnya nama data akan di set agar plot sumbunya sesuai seperti pada gambar 3.36
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/5_4.png}
+			\caption{Plotting nama data}
+			\end{figure}
+		\item Setelah label berubah, maka dilakukan perintah plot seperti pada gambar 3.37
+		\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/5_5.png}
+			\caption{Melakukan perintah plot}
+			\end{figure}
+	\end{itemize}
+\item Program Klasifikasi SVM dan Decision Tree
+	\begin{itemize}
+		\item Program Decision Tree seperti pada gambar 3.38
+			\par Mengklasifikasikan dataset yang sama menggunakan decision tree.
+				\begin{figure}[ht]
+				\centering
+				\includegraphics[scale=0.7]{figures/PRF/6_1.png}
+				\caption{Klasifkasi menggunakan decision tree}
+				\end{figure}
+		\item Program Klasifikasi SVM seperti pada gambar 3.39
+			\par Mengklasifikasikan dataset yang sama menggunakan SVM.
+				\begin{figure}[ht]
+				\centering
+				\includegraphics[scale=0.7]{figures/PRF/6_2.png}
+				\caption{Klasifikasi menggunakan SVM}
+				\end{figure}
+	\end{itemize}
+\item Program Cross Validation
+	\begin{itemize}
+		\item Lakukan pengecekan cross validation untuk random forest seperti pada gambar 3.40
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/7_1.png}
+			\caption{Pengecekan cross validation random forest}
+			\end{figure}
+		\item  Lakukan pengecekan cross validation untuk decission tree  seperti pada gambar 3.41
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/7_2.png}
+			\caption{Pengecekan cross validation decision tree}
+			\end{figure}
+		\item Lakukan pengecekan cross validation untuk SVM  seperti 2pada gambar 3.4
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/7_3.png}
+			\caption{Pengecekan cross validation SVM}
+			\end{figure}
+	\end{itemize}
+\item Program Pengamatan Komponen Informasi
+	\begin{itemize}
+		\item Melakukan pengamatan komponen informasi untuk menetahui berapa banyak tree yang dibuat, atribut yang dipakai, dan informasi lainnya  seperti pada gambar 3.43
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/8_1.png}
+			\caption{Pengamatan Komponen}
+			\end{figure}
+		\item Melakukan plot informasi agar bisa dibaca  seperti pada gambar 3.44
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[scale=0.7]{figures/PRF/8_2.png}
+			\caption{Plot informasi}
+			\end{figure}
+	\end{itemize}
+\end{enumerate}
+
 
 >>>>>>> c781ac4472a25ed2af92e92a48bac83484ece61c
 \section{Method 1}
