@@ -24,7 +24,6 @@ Berikut adalah langkah-langkah membaca dataset :
 \begin{itemize}
 \item Pertama-tamma buka applikasi Anaconda Navigator lalu jalankan Syder, kemudian import libraries yang mau dibuat
 \item Selanjutnya masukkan kode python untuk membaca file csv, lalu run applikasinya
-
 \begin{figure}[ht]
 \centering
 \includegraphics[scale=0.8]{figures/c3jesron2.jpeg}
@@ -74,7 +73,6 @@ Berikut adalah langkah-langkah membaca dataset :
 \item Perintah yang telah dilakukan gunanya untuk menampilkan dataset.
 \item Lalu klick dataset tersebut maka muncul tabel berisi dataset.
 \end{itemize}
-
 \item Cross Validation
 
 Cross Validation adalah sebuah teknik untuk memvalidasi model agar dapat menilai bagaimana hasil dari sebuah statistik analisis yang akan menggeneralisasi kumpulan beberapa data independen. Teknik ini lebih sering digunakan untuk melakukan prediksi model dan memperkirakan seberapa akurat sebuah model prediktif ketika sedang dijalankan dalam sebuah praktiknya. Dalam sebuah masalah prediksi, sebuah model biasanya diberikan kumpulan data (dataset) yang telah diketahui untuk digunakan dalam menjalankan pelatihan (dataset pelatihan), serta kumpulan data yang tidak diketahui (atau data yang pertama kali dilihat) terhadap model yang diuji (pengujian dataset)
@@ -138,7 +136,6 @@ Voting yaitu suara untuk setiap target yang diprediksi pada saat melakukan Rando
 \end{figure}
 \end{itemize}
 \end{enumerate}
-
 \section{The data}
 PLease tell where is the data come from, a little brief of company can be put here.
 \section {Puad Hamdani/ 1164084}
@@ -180,9 +177,491 @@ Cross Validation adalah teknik validasi model untuk menilai bagaimana hasil anal
 \item Voting
 \par
 Voting Merupakan metode untuk menentukan keputusan dalam suatu suatu pemilihan, berdasarkan pendapat per orang, dan keputusan ditentukan berdasarkan pemilih terbanyak
-
-<<<<<<< HEAD
 \end{enumerate}
+<<<<<<< HEAD
+
+\section {Puad Hamdani / 1164084}
+\subsection{Praktek}
+Penyelesaian Tugas minggu ke 3
+\begin{enumerate}
+\item Program Aplikasi Random Forest dan Penjelasan Keluarannya :
+\begin{itemize}
+\item Code 1 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd1.jpg}
+\caption{Gambar1}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Membaca dataset. Codingan di atas menghasilkan variabel baru yaitu imgatt. Terdapat 3 kolom dan 3677856 baris data.
+\par 
+\par
+\end{itemize}
+\item Code 2 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd2.jpg}
+\caption{Gambar2}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan di atas berfungsi untuk melihat sebagian data awal dari dataset. Hasilnya terdapat pada gambar di atas setelah di eksekusi.
+\par
+\par
+\end{itemize}
+\item Code  3 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd3.jpg}
+\caption{Gambar3}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Codingan di atas merupakan tampilan untuk menampilkan hasil dari dataset yang telah di run atau di eksekusi. Dimana pada gambar di atas 3677856 merupakan baris dan 3 adalah kolom.
+\par
+\par
+\end{itemize}
+\item Code 4 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd4.jpg}
+\caption{Gambar 4}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas menmapilkan hasil dari variabel imgatt2. Dimana index nya 'imgid', kolom berisi 'attid' dan values atau nilainya berisi 'present'.
+\par
+\par
+\end{itemize}
+\item Code 5 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd5.jpg}
+\caption{Gambar 5}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas menmapilkan hasil dari variabel imgatt2.head. Dimana dataset nya ada 5 baris dan 312 kolom.
+\par
+\par
+\end{itemize}
+\item Code 6 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd6.jpg}
+\caption{Gambar 6}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas menampilkan jumlah dari baris dan kolom dari variabel imgatt2. Dimana 11788 adalah baris dan 312 adalah kolom.
+\par
+\par
+\end{itemize}
+\item Code 7 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd7.jpeg}
+\caption{Gambar 7}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas menunjukkan load dari  jawabannya yang berisi " apakah burung tersebut ( subjek pada dataset ) termasuk dalam spesies yang mana ?. Kolom yang digunakan adalah imgid dan label, kemudian melakukan pivot yang mana imgid menjadi index yang artinya unik sehubungan dengan dataset yang telah dieksekusi.
+\par
+\par
+\end{itemize}
+\item Code 8 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.2]{figures/pd8.jpg}
+\caption{Gambar 8}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas menunjukkan hasil dari variabel imglabels. Dimana menampilkan dataset dari imgid dan label. Dan dapat dilihat hasilnya dari gambar di atas.
+\par
+\par
+\end{itemize}
+\item Code 9 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd9.jpg}
+\caption{Gambar 9}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas menunjukkan jumlah baris dan kolom dari variabel imglabels. Dimana hasil dari kodingan tersebut dapat dilihat setelah di run. 
+\par
+\par
+\end{itemize}
+\item Code 10 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd10.jpg}
+\caption{Gambar 10}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar diatas dikarenakan isinya sama, maka bisa melakukan join antara dua data yang diesekusi ( yaitu ada imgatt2 dan imglabels ), sehingga pada hasilnya akan didapatkan data ciri dan data jawaban atau labelnya sehingga bisa dikategorikan/dikelompokkan sebagai supervised learning. Jadi perintah untuk menggabungkan kedua data, kemudian dilakukan pemisahan antara data set untuk training dan test pada dataset yang dieksekusi.
+\par
+\par
+\end{itemize}
+\item Code 11 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd11.jpg}
+\caption{Gambar 11}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan :Pada gambar di atas menghasilkan pemisahan dan pemilihan tabel ( memisahkan dan memilih tabel ). 
+\par
+\par
+\end{itemize}
+\item Code 12 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd12.jpg}
+\caption{Gambar 12}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas menunjukkan hasil dari variabel dtatthead. Dimana data nya dapat dilihat pada gambar diatas. Dan dataset nya terdiri dari 5 baris dan 312 kolom.
+\par
+\par
+\end{itemize}
+\item Code 13 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd13.jpg}
+\caption{Gambar 13}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas menunjukkan hasil dari variabel dflabel.head. Dimana berisikan data dari imgid dan label. Dan hasilnya dapat dilihat pada gambar di atas.
+\par
+\par
+\end{itemize}
+\item Code 14 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd14.jpg}
+\caption{Gambar 14}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas merupakan pembagian dari data training dan dataset
+\par
+\par
+\end{itemize}
+\item Code 15 :
+\par
+\begin{figure}[ht] 
+\centering
+\includegraphics[scale=0.7]{figures/pd15.jpg}
+\caption{Gambar 15}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize} 
+\item Penjelasan : Pada gambar di atas merupakan pemanggilan kelas RandomForestClassifier. max features yang diartikan berapa banyak kolom pada setiap tree.
+\par
+\par
+\end{itemize}
+\item Code 16 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd16.jpg}
+\caption{Gambar 16}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas merupaka perintah untuk melakukan fit untuk membangun random forest yang sudah ditentukan dengan maksimum fitur sebanyak 50.
+\par
+\par
+\end{itemize}
+\item Code 17 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd18.jpg}
+\caption{Gambar 17}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas menunjukkan hasil dari cetakan variabel dftrainatt.head.
+\par
+\par
+\end{itemize}
+\item Code  18 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd18.jpg}
+\caption{Gambar 18}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas merupakan hasil dari variabel dftestatt da dftsetlabel. Dimana hasilnya dapat dilihat dari pada gambar di atas
+\par
+\par
+\end{itemize}
+
+\end{itemize}
+
+
+\par
+\par
+\item Program Aplikasi Confusion Matrix dan Penjelasan Keluarannya :
+\begin{itemize}
+\item Code 1 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd19.jpg}
+\caption{Gambar 19}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan :  Pada gambar di atas merupakan kodingan untuk import confusiion matrik dari random forest. untuk hasilnya dapat dilihat dari gambar.
+\par 
+\par
+\end{itemize}
+\item Code  2 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd20.jpg}
+\caption{Gambar 20}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas merupakan tampilan dari variabel cm.
+\par
+\par
+\end{itemize}
+\item Code  3 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd21.jpg}
+\caption{Gambar 21}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas merupakan perintah untuk plot. Dan untuk hasilnya terpadat pada gambar di atas. 
+\par
+\par
+\end{itemize}
+\item Code  4 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd22.jpg}
+\caption{Gambar 22}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas merupakan kodingan untuk menyesuaikan sumbu dengan nama datanya makanya datset nya di lakukan dengan perintah di atas.
+\par
+\par
+\par
+\end{itemize}
+\item Code 5 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd23.jpeg}
+\caption{Gambar 23}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas merupakan perintah plot dari gambar sebelumnya.
+\par
+\par
+\par
+\end{itemize}
+
+\end{itemize}
+
+\par
+\par
+\item Program Klasifikasi SVM dan Decision Tree Beserta Penjelasan Keluarannya :
+\begin{itemize}
+\item Code SVM :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd24.jpg}
+\caption{SVM}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas cara untuk mencoba klasikasi dengan SVM dengan dataset yang sama.
+\par 
+\par
+\end{itemize}
+\item Code Decision Tree :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd25.jpg}
+\caption{Decission Tree}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas merupakan cara untuk mencoba klasikasi dengan decission tree dengan dataset yang sama.
+\par
+\par
+\end{itemize}
+\end{itemize}
+
+
+
+\par
+\par
+\item Program Cross Validation dan Penjelasan Keluarannya :
+\begin{itemize}
+\item Code 1 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd26.jpg}
+\caption{Cross Validation 1}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas merupakan Hasil dari cross validation random forest.
+\par 
+\par
+\end{itemize}
+\item Code  2  :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd27.jpg}
+\caption{Cross Validation 2}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas merupakan hasil dari cross validation Decission tree.
+\par
+\par
+\end{itemize}
+\item Code  3 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd28.jpg}
+\caption{Cross Validation 3}
+\label{contoh}
+\end{figure}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas merupakan hasil dari cross validation SVM.
+\par
+\par
+\end{itemize}
+\end{itemize}
+\par
+\par
+\item Program Pengamatan Komponen Informasi dan Penjelasan Keluarannya :
+\begin{itemize}
+\item Code 1 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd29.jpg}
+\caption{Program Pengamatan Komponen Informasi 1}
+\label{contoh}
+\end{figure}
+\end{itemize}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas menunjukkan cara untuk mengetahui berapa banyak tree yang dibuat, berapa banyak atribut yang dipakai dan informasi lainnya menggunakan kode.
+\par 
+\par
+
+
+\item Code 2 :
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/pd30.jpg}
+\caption{Program Pengamatan Komponen Informasi 2}
+\label{contoh}
+\end{figure}
+\end{itemize}
+\par
+\begin{itemize}
+\item Penjelasan : Pada gambar di atas merupakan cara untuk  melakukan plot informasi ini dengan kode di atas.
+\par 
+\par
+\end{itemize}
+
+
+\item Penanganan Error
+\begin{itemize}
+\item Skrinsut Error
+\par
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{figures/Error.jpg}
+\caption{Error}
+\label{contoh}
+\end{figure}
+\end{itemize}
+\par
+\begin{itemize}
+\item Kode Error: file b'data/CUB 200 2011/attributes/image attributes labels.txt'
+\par 
+\item Solusi Pemecahan Error : Hapus Direktori data pada kode pastikan satu folder.
+\par 
+\par
+\end{itemize}
+\end{enumerate}
+
 =======
 \section {Mhd Zulfikar Akram Nasution / 1164081}
 \subsection {Teori}
@@ -196,7 +675,6 @@ Ramdom Forest adalah hutan yang acak, dimana maksudnya yaitu terdapat banyak poh
 \caption{Random Forest}
 \end{figure}
 \item Cara membaca dataset kasus
-\begin{itemize}
 \item Buka aplikasi spyder untuk membuka dan membaca kodingan dataset
 \item Kemudian buat  variable imgatt untuk memasukkan atribut label
 \item Lalu uji coba kodingan untuk mengetahui apa hasil dari dataset tersebut
@@ -205,23 +683,18 @@ Ramdom Forest adalah hutan yang acak, dimana maksudnya yaitu terdapat banyak poh
 \item .pivot untuk merubah atribut menjadi kolom
 \par
 Dengan menguji coba kodingan yang ada pada spyder kita akan dapat membaca dataset yang ada.
-\end{itemize}
 \item Cross Validation
 \par 
 Cross Validation adalah sebuah metode statistik yang digunakan untuk mengevaluasi kinerja model, dimana data dipisah menjadi dua subset yaitu data proses pembelajan dan data evaluasi atau validasi.
 \item Arti 44 persen pada RF, 27 persen pada Decission Tree, dan 29 persen pada SVM.
-\begin{itemize}
 \item 44 persen pada Random Forest adalah menjunjukkan hasil yang sempurna pada keputusan yang diambil, biasanya hasil keputusan yang dicapai sekitar 42-44 persen.
 \item 27 persen pada Decission Tree adalah menunjukkan hasil keputusan pada tiap-tiap tree dari dataset yang ada.
 \item 29 persen pada SVM menunjukkan hasil keputusan dengan klasifikasi dari dataset yang ada.
-\end{itemize}
 \item Confusion Matrix
-\begin{itemize}
 \item Pertama import confusion matrixnya
 \item Kemudian Plot confusion matrix
 \item Lalu sesuaikan plotnya dengan nama data yang ada
 \item Setelah itu plot kembali
-\end{itemize}
 \par
 Contoh hasil connfusion matrix pada gambar 3.2
 \begin{figure}[ht]
@@ -239,6 +712,9 @@ Voting adalah hasil akhir dari keputusan yang ada pasa setiap pohon di random fo
 \end{figure}
 
 \end{enumerate}
+
+
+
 
 >>>>>>> c781ac4472a25ed2af92e92a48bac83484ece61c
 \section{Method 1}
